@@ -1,0 +1,21 @@
+.anchor{
+	 -fx-background-size:100% 100%;
+}
+
+.label{
+	 -fx-font: 20 "serif"; 	  
+}
+
+.img:hover{
+    -fx-cursor: hand;
+}
+
+.buyPane{
+	-fx-background-color: rgba(199, 236, 239, 0.58); 
+	-fx-background-radius: 10;
+}
+
+.text{
+	 -fx-font: bold 64 "serif";
+	  -fx-padding: 0 0 20 0; 	  
+}

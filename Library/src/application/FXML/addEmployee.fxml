@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="442.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.employee">
+   <children>
+      <VBox layoutX="14.0" layoutY="20.0" prefHeight="382.4" prefWidth="631.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="label" text="Add Employee:">
+               <VBox.margin>
+                  <Insets left="34.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" prefHeight="0.0" promptText="Name">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="password" promptText="Password">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="20.0" />
+               </VBox.margin>
+            </PasswordField>
+            <HBox prefHeight="10.0" prefWidth="632.0">
+               <children>
+                  <CheckBox fx:id="checkBox" mnemonicParsing="false" onAction="#disableEdit" prefHeight="18.0" prefWidth="262.0" text="Chek for generate password">
+                     <HBox.margin>
+                        <Insets left="40.0" top="10.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <TextField fx:id="salary" layoutX="10.0" layoutY="89.0" prefHeight="0.0" prefWidth="200.0" promptText="Salary">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="42.0" prefWidth="632.0">
+               <children>
+                  <Label fx:id="label" prefHeight="18.0" prefWidth="174.0" text="Choose your work time:">
+                     <HBox.margin>
+                        <Insets left="40.0" top="14.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="work" mnemonicParsing="false" onAction="#displayWorkTimes" prefHeight="15.0" prefWidth="42.0" text="+">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="confirm" prefHeight="18.0" prefWidth="273.0">
+               <VBox.margin>
+                  <Insets left="40.0" top="14.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="53.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="save" mnemonicParsing="false" onAction="#save" prefHeight="52.0" prefWidth="126.0" stylesheets="@application.css" text="Save">
+                     <HBox.margin>
+                        <Insets left="160.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancel" prefHeight="52.0" prefWidth="126.0" stylesheets="@application.css" text="Cancel">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="msg" prefHeight="18.0" prefWidth="529.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="80.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+.toto{
+		 -fx-font: bold 48 "serif";
+	  -fx-padding: 0 0 20 0; 
+}
+
+.ImageView:hover{
+    -fx-cursor: hand;
+}

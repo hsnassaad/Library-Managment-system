@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.workTimes">
+   <children>
+      <TableView fx:id="workTime" layoutX="87.0" layoutY="44.0" onMouseClicked="#setTime" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="days" prefWidth="142.4000244140625" text="Days" />
+          <TableColumn fx:id="StartTime" prefWidth="220.79998779296875" text="Start Time" />
+            <TableColumn fx:id="EndTime" prefWidth="239.20001220703125" text="End Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

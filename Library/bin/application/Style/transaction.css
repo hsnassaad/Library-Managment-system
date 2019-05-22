@@ -1,0 +1,43 @@
+.anchor{
+	 -fx-background-size:100% 100%;
+}
+
+
+.salePane{
+	-fx-background-color: rgba(219, 127, 141, 0.58); 
+	-fx-background-radius: 10;
+}
+
+.rentPane{
+	-fx-background-color: rgba(192, 101, 26, 0.52); 
+	-fx-background-radius: 10;
+}
+
+.rewindPane{
+	-fx-background-color: rgba(152, 151, 236, 0.58); 
+	-fx-background-radius: 10;
+}
+
+
+.hyperlink{
+	
+	-fx-border-color: transparent;
+	-fx-font-size: 20;
+}
+
+.hyperlink:pressed {
+   -fx-text-fill: white;
+}
+
+.text{
+	 -fx-font: bold 64 "serif";
+	  -fx-padding: 0 0 20 0; 	  
+}
+
+
+.ImageView:hover{
+	 -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-scale-z: 1.5;
+    -fx-cursor: hand;
+}

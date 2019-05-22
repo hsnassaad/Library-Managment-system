@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="anchor" prefHeight="600.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.showBooks">
+   <children>
+      <BorderPane fx:id="borderoPano" prefHeight="600.0" prefWidth="756.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TabPane BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab closable="false" text="Buy Books">
+                     <content>
+                        <TabPane fx:id="tabPane1" prefHeight="120.0" prefWidth="756.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab fx:id="all1" text="All">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="AllTable1" layoutX="85.0" layoutY="70.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <columns>
+                                                <TableColumn fx:id="idAll1" prefWidth="87.20001375675201" text="ID" />
+                                                <TableColumn fx:id="titleAll1" prefWidth="85.5999984741211" text="Title" />
+                                                <TableColumn fx:id="authorAll1" prefWidth="70.39996337890625" text="Author" />
+                                                <TableColumn fx:id="descriptionAll1" prefWidth="156.79998779296875" text="Description" />
+                                                <TableColumn fx:id="qtAll1" prefWidth="68.79998779296875" text="Quantity" />
+                                                <TableColumn fx:id="priceAll" prefWidth="185.60000610351562" text="price" />
+                                             </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="roman1" text="Roman">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="RomanTable1" layoutX="141.0" layoutY="70.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <columns>
+                                                <TableColumn fx:id="idRoman1" prefWidth="75.0" text="ID" />
+                                                <TableColumn fx:id="titleRoman1" prefWidth="75.0" text="Title" />
+                                                <TableColumn fx:id="authorRoman1" prefWidth="86.4000244140625" text="Author" />
+                                                <TableColumn fx:id="summaryRoman1" prefWidth="128.0" text="sumary" />
+                                                <TableColumn fx:id="ageRoman1" prefWidth="52.0" text="Age" />
+                                                <TableColumn fx:id="qtRoman1" prefWidth="87.99993896484375" text="Quantity" />
+                                                <TableColumn fx:id="priceRoman" prefWidth="152.80007934570312" text="Price" />
+                                             </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="education1" text="Education">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="educationTable1" layoutX="141.0" layoutY="85.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <columns>
+                                                <TableColumn fx:id="idEducation1" prefWidth="94.39999544620514" text="ID" />
+                                                <TableColumn fx:id="titleEducation1" prefWidth="70.40001678466797" text="Title" />
+                                                <TableColumn fx:id="authorEducation1" prefWidth="77.5999755859375" text="Author" />
+                                                <TableColumn fx:id="subjectEducation1" prefWidth="89.5999755859375" text="subject" />
+                                                <TableColumn fx:id="alEducation1" prefWidth="102.39996337890625" text="academical lvl" />
+                                                <TableColumn fx:id="qtEducation1" prefWidth="100.79995727539062" text="Quantity" />
+                                                <TableColumn fx:id="priceEducation" prefWidth="124.800048828125" text="Price" />
+                                             </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="cookBook1" text="CookBook">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="cookTable1" layoutX="94.0" layoutY="55.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <columns>
+                                                <TableColumn fx:id="idCook1" prefWidth="75.0" text="ID" />
+                                                <TableColumn fx:id="titleCook1" prefWidth="91.1999740600586" text="Title" />
+                                                <TableColumn fx:id="authorCook1" prefWidth="75.20001220703125" text="Author" />
+                                                <TableColumn fx:id="regionCook1" prefWidth="81.5999755859375" text="region" />
+                                                <TableColumn fx:id="typeCook1" prefWidth="87.199951171875" text="type" />
+                                                <TableColumn fx:id="qtCook1" prefWidth="99.2000732421875" text="Quantity" />
+                                                <TableColumn fx:id="priceCook" prefWidth="148.79995727539062" text="Price" />
+                                             </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </content>
+                  </Tab>
+                  <Tab closable="false" text="Rent Books">
+                     <content>
+                        <TabPane fx:id="tabPane" prefHeight="120.0" prefWidth="756.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab fx:id="all" text="All">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="AllTable" layoutX="85.0" layoutY="70.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn fx:id="idAll" prefWidth="87.20001375675201" text="ID" />
+                                              <TableColumn fx:id="titleAll" prefWidth="85.5999984741211" text="Title" />
+                                                <TableColumn fx:id="authorAll" prefWidth="70.39996337890625" text="Author" />
+                                                <TableColumn fx:id="descriptionAll" prefWidth="156.79998779296875" text="Description" />
+                                                <TableColumn fx:id="qtAll" prefWidth="68.79998779296875" text="Quantity" />
+                                                <TableColumn fx:id="maxDaysAll" prefWidth="105.60000610351562" text="Max Days" />
+                                                <TableColumn fx:id="priceWeekk" prefWidth="79.199951171875" text="Price Week" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab fx:id="roman" text="Roman">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="RomanTable" layoutX="141.0" layoutY="70.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn fx:id="idRoman" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="titleRoman" prefWidth="75.0" text="Title" />
+                                                <TableColumn fx:id="authorRoman" prefWidth="86.4000244140625" text="Author" />
+                                                <TableColumn fx:id="summaryRoman" prefWidth="128.0" text="sumary" />
+                                                <TableColumn fx:id="ageRoman" prefWidth="52.0" text="Age" />
+                                                <TableColumn fx:id="qtRoman" prefWidth="87.99993896484375" text="Quantity" />
+                                                <TableColumn fx:id="maxDaysRoman" prefWidth="152.80007934570312" text="Max Days" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                             <Tab fx:id="education" text="Education">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="educationTable" layoutX="141.0" layoutY="85.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn fx:id="idEducation" prefWidth="94.39999544620514" text="ID" />
+                                              <TableColumn fx:id="titleEducation" prefWidth="70.40001678466797" text="Title" />
+                                                <TableColumn fx:id="authorEducation" prefWidth="77.5999755859375" text="Author" />
+                                                <TableColumn fx:id="subjectEducation" prefWidth="89.5999755859375" text="subject" />
+                                                <TableColumn fx:id="alEducation" prefWidth="102.39996337890625" text="academical lvl" />
+                                                <TableColumn fx:id="qtEducation" prefWidth="100.79995727539062" text="Quantity" />
+                                                <TableColumn fx:id="maxDaysEducation" prefWidth="124.800048828125" text="Max Days" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                             <Tab fx:id="cookBook" text="CookBook">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="cookTable" layoutX="94.0" layoutY="55.0" prefHeight="569.6" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn fx:id="idCook" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="titleCook" prefWidth="91.1999740600586" text="Title" />
+                                                <TableColumn fx:id="authorCook" prefWidth="75.20001220703125" text="Author" />
+                                                <TableColumn fx:id="regionCook" prefWidth="81.5999755859375" text="region" />
+                                                <TableColumn fx:id="typeCook" prefWidth="87.199951171875" text="type" />
+                                                <TableColumn fx:id="qtCook" prefWidth="99.2000732421875" text="Quantity" />
+                                                <TableColumn fx:id="maxDaysCook" prefWidth="148.79995727539062" text="Max Days" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </center>
+         <bottom>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#goBack" text="Back" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

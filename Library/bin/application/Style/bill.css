@@ -1,0 +1,26 @@
+.HBox{
+	-fx-background-color:rgb(247, 107, 7);
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler{
+	
+	    -fx-background-color: rgb(247, 107, 7);
+	
+}
+
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.text-field{
+	 -fx-text-box-border: transparent;
+}
+
+.red{
+	-fx-control-inner-background:rgba(240, 44, 34, 0.17);
+	-fx-text-fill: black;
+}

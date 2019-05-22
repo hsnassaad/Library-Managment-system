@@ -1,0 +1,17 @@
+.anchor{
+	-fx-background-size:100% 100%;
+}
+
+.pane{
+	-fx-background-color: rgba(10, 9, 10, 0.35); 
+	-fx-background-radius: 10;
+}
+
+.text{
+	 -fx-font: italic 20 "serif";
+	  -fx-padding: 0 0 20 0; 	  
+}
+.label{
+	-fx-text-fill: rgba(10, 9, 10, 0.87);
+	 -fx-font: italic 36 "serif";
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" prefHeight="522.0" prefWidth="796.0" style="-fx-background-image: url('images/19859234.jpg');" styleClass="anchor" stylesheets="@../Style/buyAction.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditBuy">
+   <children>
+      <ImageView fx:id="back" fitHeight="54.0" fitWidth="128.0" layoutX="32.0" layoutY="31.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true" styleClass="img">
+         <image>
+            <Image url="@../../icons/ic_arrow_back_48px-512.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane" layoutX="117.0" layoutY="22.0" prefHeight="458.0" prefWidth="568.0" styleClass="buyPane">
+         <children>
+            <Text fx:id="buyText" layoutX="121.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Edit Buy:" wrappingWidth="325.2781066894531" />
+            <Label fx:id="label" layoutX="37.0" layoutY="164.0" style="-fx-font-size: 20;" stylesheets="@../Style/transaction.css" text="Choose a book:" />
+            <TextField fx:id="texto" layoutX="198.0" layoutY="163.0" />
+            <Label fx:id="labelQuantity" layoutX="48.0" layoutY="218.0" style="-fx-font-size: 20;" stylesheets="@../Style/transaction.css" text="Quantity:" />
+            <TextField fx:id="qt" layoutX="198.0" layoutY="217.0" />
+            <ImageView fx:id="buy" fitHeight="83.0" fitWidth="76.0" layoutX="234.0" layoutY="283.0" onMouseClicked="#buyAction" pickOnBounds="true" preserveRatio="true" styleClass="img">
+               <image>
+                  <Image url="@../../icons/buying_help_242455.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="796.0" style="-fx-background-image: url('images/13375469.jpg');" styleClass="anchor" stylesheets="@../Style/roman.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.edittRoman">
+   <children>
+      <StackPane fx:id="stackPane" layoutX="132.0" layoutY="27.0" prefHeight="522.0" prefWidth="532.0" styleClass="pane" AnchorPane.bottomAnchor="50.60000000000002">
+         <children>
+            <VBox prefHeight="522.0" prefWidth="541.0" StackPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="text" fill="#9a6d04" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Edit Roman Book:" x="16.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="id" prefHeight="26.0" prefWidth="178.0" promptText="Enter ID">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="100.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="title" prefHeight="26.0" prefWidth="178.0" promptText="Enter Title ">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="100.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="author" prefHeight="26.0" prefWidth="178.0" promptText="Enter Author">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="100.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="description" prefHeight="26.0" prefWidth="178.0" promptText="Description">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="100.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="qt" prefHeight="26.0" prefWidth="178.0" promptText="Quantity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="100.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="age" prefHeight="26.0" prefWidth="178.0" promptText="Enter Age">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="100.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextArea fx:id="summary" prefHeight="110.0" prefWidth="233.0" promptText="Summary">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="100.0" top="5.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <HBox>
+                     <children>
+                        <Button fx:id="cancel" mnemonicParsing="false" onAction="#Cancel" text="Cancel">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="160.0" right="40.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="next" mnemonicParsing="false" onAction="#GoToNext" text="Next">
+                           <padding>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+      <ImageView fx:id="back" fitHeight="43.0" fitWidth="50.0" layoutX="50.0" layoutY="53.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../../icons/39-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

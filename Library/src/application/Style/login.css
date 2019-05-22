@@ -1,0 +1,48 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* .root{
+	-fx-background-color:#3c4d5d;
+}*/
+
+.login{
+	-fx-background-color:#5bc0de;
+	-fx-text-fill:white;
+	-fx-border-radius:5px;
+	-fx-background-radius:5px;
+	}
+Button.login:hover{
+	-fx-background-color:#428bca;
+	-fx-text-fill:black;
+	-fx-cursor:hand;
+	
+}
+
+.text{
+  -fx-border-color: grey;
+  -fx-border-radius:5px;
+  -fx-background-insets: 0, 0 0 1 0 ;
+  -fx-background-radius: 5px ;
+  -fx-text-box-border: transparent;
+  -fx-background-insets: 0;
+  -fx-faint-focus-color:transparent;
+  -fx-focus-color: transparent;
+}
+
+.wrong_inputs{
+	-fx-border-color:#FF0000;
+}
+
+
+.b{
+	 -fx-background-size:100% 100%;
+}
+
+
+.lolo:hover{
+	-fx-background-color:rgba(229, 240, 24, 0.92);
+	-fx-text-fill:white;
+}
+
+
+
+

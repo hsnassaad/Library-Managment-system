@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="sp" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Transaction">
+   <children>
+      <AnchorPane fx:id="anchor" prefHeight="522.0" prefWidth="796.0" style="-fx-background-image: url('images/transaction.jpg');" styleClass="anchor" stylesheets="@../Style/transaction.css">
+         <children>
+            <Pane fx:id="salePane" layoutX="71.0" layoutY="103.0" prefHeight="371.0" prefWidth="200.0" styleClass="salePane">
+               <children>
+                  <ImageView fx:id="BookSale" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="43.0" onMouseClicked="#SaleAction" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                     <image>
+                        <Image url="@../../icons/bookForSale.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="rentPane" layoutX="292.0" layoutY="103.0" prefHeight="371.0" prefWidth="200.0" styleClass="rentPane">
+               <children>
+                  <ImageView fx:id="BookRent" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="37.0" onMouseClicked="#RentAction" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                     <image>
+                        <Image url="@../../icons/RentBook.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="rewindPane" layoutX="515.0" layoutY="103.0" prefHeight="371.0" prefWidth="200.0" styleClass="rewindPane">
+               <children>
+                  <ImageView fx:id="BookRewind" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="49.0" onMouseClicked="#RewindAction" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                     <image>
+                        <Image url="@../../icons/returnBook.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Text fx:id="text" fill="#faf7f7" layoutX="73.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Transactions:" wrappingWidth="415.783935546875" />
+            <HBox layoutX="627.0" layoutY="14.0" prefHeight="18.0" prefWidth="116.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                  <Text fx:id="name" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Hyperlink fx:id="edit" layoutX="626.0" layoutY="54.0" onAction="#edit_client" prefHeight="16.0" prefWidth="46.0" style="-fx-font-size: 12;" stylesheets="@../Style/transaction.css" text="edit ">
+               <padding>
+                  <Insets left="6.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="seeTransaction" layoutX="683.0" layoutY="52.0" onAction="#seeRecentTransaction" prefHeight="23.0" prefWidth="96.0" style="-fx-font-size: 12;" stylesheets="@../Style/transaction.css" text="see transaction" />
+            <Text layoutX="768.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]" wrappingWidth="3.6210962533950806" />
+            <Text layoutX="681.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[" />
+            <Text layoutX="657.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]" wrappingWidth="3.6210962533950806" />
+            <Text layoutX="626.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[" />
+            <ImageView fx:id="back" fitHeight="54.0" fitWidth="128.0" layoutX="14.0" layoutY="27.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" styleClass="img">
+               <image>
+                  <Image url="@../../icons/ic_arrow_back_48px-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor2" prefHeight="200.0" prefWidth="200.0" stylesheets="@../Style/transaction2.css" visible="false">
+         <children>
+         
+            <Text fx:id="rt" fill="#faf7f7" layoutX="33.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="toto" text="Recent Transaction: " wrappingWidth="549.1437377929688">
+               <font>
+                  <Font size="36.0" />
+               </font></Text>
+            <TableView fx:id="rtTable" layoutX="14.0" layoutY="84.0" prefHeight="354.0" prefWidth="770.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="144.0" text="Book ID" />
+                <TableColumn fx:id="namo" prefWidth="144.0" text="Book Name" />
+                  <TableColumn fx:id="category" prefWidth="144.0" text="Category" />
+                  <TableColumn fx:id="qd" prefWidth="210.40005493164062" text="Quantity/Days" />
+                  <TableColumn fx:id="type" prefWidth="144.0" text="Type" />
+              </columns>
+            </TableView>
+            <ButtonBar layoutX="583.0" layoutY="462.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="backk" mnemonicParsing="false" onAction="#goBack" prefHeight="42.0" prefWidth="78.0" text="Back" />
+              </buttons>
+            </ButtonBar>
+            <ImageView fx:id="editImage" fitHeight="23.0" fitWidth="24.0" layoutX="703.0" layoutY="48.0" onMouseClicked="#editTransaction" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../../icons/Edit-validated-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="deleteImage" fitHeight="23.0" fitWidth="24.0" layoutX="738.0" layoutY="48.0" onMouseClicked="#deleteTransaction" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../../icons/627249-delete3-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

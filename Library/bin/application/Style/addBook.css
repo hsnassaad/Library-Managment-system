@@ -1,0 +1,18 @@
+.anchor{
+	 -fx-background-size:100% 100%;
+}
+
+
+.hyperlink{
+	-fx-underline:false;
+	-fx-border-color: transparent;
+	
+}
+
+.hyperlink:hover{
+	-fx-text-fill:black;
+	 -fx-scale-x: 2;
+    -fx-scale-y: 2;
+    -fx-scale-z: 2;
+}
+

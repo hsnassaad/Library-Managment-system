@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<SplitPane fx:id="splitPane" dividerPositions="0.6307385229540918" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.returnBook">
+   <items>
+      <AnchorPane fx:id="anchor" prefHeight="522.0" prefWidth="796.0" style="-fx-background-image: url('images/57d0516a1700002430c78320.jpeg');" styleClass="anchor" stylesheets="@../Style/buyAction.css">
+         <children>
+            <ImageView fx:id="back" fitHeight="54.0" fitWidth="128.0" layoutX="32.0" layoutY="31.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true" styleClass="img">
+               <image>
+                  <Image url="@../../icons/ic_arrow_back_48px-512.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="pane" layoutX="95.0" layoutY="31.0" prefHeight="393.0" prefWidth="485.0" styleClass="buyPane">
+               <children>
+                  <Text fx:id="rentText" layoutX="41.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Return Book:" wrappingWidth="403.6781311035156" />
+                  <Label fx:id="label" layoutX="37.0" layoutY="164.0" style="-fx-font-size: 20;" stylesheets="@../Style/transaction.css" text="Book ID:" />
+                  <TextField fx:id="texto" layoutX="198.0" layoutY="163.0" />
+                  <Label fx:id="labelDays" layoutX="42.0" layoutY="218.0" style="-fx-font-size: 20;" stylesheets="@../Style/transaction.css" text="Penalty:" />
+                  <TextField fx:id="daysField" layoutX="198.0" layoutY="217.0" />
+                  <ImageView fx:id="rent" fitHeight="83.0" fitWidth="76.0" layoutX="234.0" layoutY="283.0" onMouseClicked="#rentoAction" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                     <image>
+                        <Image url="@../../icons/rent.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="rewindTable" onMouseClicked="#getItems" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="idBook" prefWidth="75.0" text="Book ID" />
+          <TableColumn fx:id="days" prefWidth="75.0" text="Start Days" />
+            <TableColumn fx:id="maxDays" prefWidth="75.0" text="End Days" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </items>
+</SplitPane>

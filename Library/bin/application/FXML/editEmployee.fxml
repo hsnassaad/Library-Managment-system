@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" prefHeight="479.0" prefWidth="814.0" styleClass="anchor" stylesheets="@../Style/employee.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.editemployee">
+   <children>
+      <Pane fx:id="pane" layoutY="7.0" prefHeight="479.0" prefWidth="814.0" style="-fx-background-color: rgba(242, 22, 242, 0.7);" stylesheets="@../Style/employee.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutY="83.0" prefHeight="310.0" prefWidth="814.0">
+               <children>
+                  <HBox prefHeight="72.0" prefWidth="814.0">
+                     <children>
+                        <Label fx:id="labelName" style="-fx-text-fill: white;" styleClass="text" stylesheets="@../Style/employee.css" text="Name*" textFill="#f4f4f5">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="name" focusTraversable="false" prefHeight="26.0" prefWidth="201.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="44.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="72.0" prefWidth="814.0">
+                     <children>
+                        <Label fx:id="labelEmail" style="-fx-text-fill: white;" styleClass="text" stylesheets="@../Style/employee.css" text="Email*">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="email" focusTraversable="false" prefHeight="26.0" prefWidth="201.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="43.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="82.0" prefHeight="72.0" prefWidth="814.0">
+                     <children>
+                        <Label fx:id="labelPhone" style="-fx-text-fill: white;" text="Phone*">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="phone" focusTraversable="false" prefHeight="26.0" prefWidth="201.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="154.0" prefHeight="72.0" prefWidth="814.0">
+                     <children>
+                        <Label fx:id="Labelusername" style="-fx-text-fill: white;" text="Username*">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="username" focusTraversable="false" prefHeight="26.0" prefWidth="201.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="8.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="226.0" prefHeight="72.0" prefWidth="814.0">
+                     <children>
+                        <Label fx:id="LabelPassword" style="-fx-text-fill: white;" text="Password">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <PasswordField fx:id="password" focusTraversable="false" prefHeight="26.0" prefWidth="202.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="21.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="72.0" prefWidth="814.0">
+                     <children>
+                        <Label fx:id="labelSalary" style="-fx-text-fill: white;" text="Salary">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="salary" focusTraversable="false" prefHeight="26.0" prefWidth="201.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="46.0" right="43.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="72.0" prefWidth="814.0">
+                     <children>
+                        <Label fx:id="labelWork" style="-fx-text-fill: white;" text="select work Time:">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="workati" prefHeight="23.0" prefWidth="467.0" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets top="6.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Hyperlink fx:id="change" onAction="#change" stylesheets="@../Style/edit.css" text="change time">
+                           <HBox.margin>
+                              <Insets top="-1.0" />
+                           </HBox.margin>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Text fx:id="text" fill="#f4f0f0" layoutX="28.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Employee:">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="submit" layoutX="698.0" layoutY="422.0" mnemonicParsing="false" onAction="#saveEmployee" text="Update" />
+            <Button fx:id="show" layoutX="222.0" layoutY="407.0" mnemonicParsing="false" onAction="#showww" prefHeight="31.0" prefWidth="79.0" text="Show" />
+            <Button fx:id="backooo" layoutX="598.0" layoutY="422.0" mnemonicParsing="false" onAction="#goBack" prefHeight="31.0" prefWidth="73.0" text="Back" />
+            <ImageView fx:id="employeeeee" fitHeight="150.0" fitWidth="200.0" layoutX="584.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/repair-3-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

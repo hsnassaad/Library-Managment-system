@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="parentController" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddBook">
+   <children>
+      <AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="796.0" style="-fx-background-image: url(images/22768782.jpg);" styleClass="anchor" stylesheets="@../Style/addBook.css">
+         <children>
+            <Hyperlink fx:id="roman" alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="240.0" onAction="#AddRoman" prefHeight="42.0" prefWidth="97.0" rotate="-11.3" stylesheets="@../Style/addBook.css" text="Roman" textAlignment="CENTER">
+               <font>
+                  <Font name="Nirmala UI" size="20.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="cookBook" layoutX="330.0" layoutY="89.0" onAction="#AddCookBook" rotate="5.5" stylesheets="@../Style/addBook.css" text="CookBook">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fx:id="back" fitHeight="42.0" fitWidth="54.0" layoutX="23.0" layoutY="14.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../../icons/39-512.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="education" alignment="CENTER" layoutX="585.0" layoutY="287.0" onAction="#AddEducation" prefHeight="42.0" prefWidth="135.0" rotate="6.0" stylesheets="@../Style/addBook.css" text="Education">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,36 @@
+.anchore{
+	-fx-background-size:100% 100%;
+}
+	 
+	.button{
+	-fx-background-color:#5bc0de;
+	-fx-text-fill:white;
+	-fx-border-radius:5px;
+	-fx-background-radius:5px;
+	}
+	
+	
+.button:hover{
+-fx-background-color:#428bca;
+	-fx-text-fill:black;
+	-fx-cursor:hand;
+}
+
+
+.tab-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:transparent;
+}
+
+.tab {
+  -fx-font-family: Arial;
+  -fx-font-size: 18;
+  -fx-background-color:royalblue ;
+}
+
+.tab:selected {
+    -fx-background-color:blue ;
+}
+
+	
+	
+
